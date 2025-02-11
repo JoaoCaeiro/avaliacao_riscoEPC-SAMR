@@ -36,11 +36,12 @@ def avaliar_risco():
 
         st.subheader("🏥 Critérios de Rastreio Específico para SAMR")
 
-        criterios_samr = 
+        criterios_samr = [
             st.radio("Presença de dispositivos invasivos?", ("", "Sim", "Não"), key="samr6"),
             st.radio("Utilização de antibióticos nos 6 meses anteriores?", ("", "Sim", "Não"), key="samr7"),
             st.radio("Feridas não cicatrizadas ou crónicas?", ("", "Sim", "Não"), key="samr8"),
             st.radio("Infeção ou colonização por SAMR prévia?", ("", "Sim", "Não"), key="samr9")
+        ]  # ✅ CORREÇÃO: Lista fechada corretamente!
 
         if st.button("🔍 Analisar Critérios SAMR"):
             if all(criterio != "" for criterio in criterios_samr):
@@ -81,9 +82,5 @@ def avaliar_risco():
 
 if __name__ == "__main__":
     avaliar_risco()
-
-
-
-
 
 
