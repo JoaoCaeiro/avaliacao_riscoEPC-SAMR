@@ -36,12 +36,7 @@ def avaliar_risco():
 
         st.subheader("🏥 Critérios de Rastreio Específico para SAMR")
 
-        criterios_samr = [
-            st.radio("Internamento hospitalar nos últimos 12 meses?", ("", "Sim", "Não"), key="samr1"),
-            st.radio("Internamento em unidades de cuidados continuados/paliativos ou ERPI?", ("", "Sim", "Não"), key="samr2"),
-            st.radio("Hemodiálise crónica?", ("", "Sim", "Não"), key="samr3"),
-            st.radio("Admissão a cuidados nível II e III?", ("", "Sim", "Não"), key="samr4"),
-            st.radio("Admissão a unidade de hemato-oncologia ou transplantação?", ("", "Sim", "Não"), key="samr5"),
+        criterios_samr = 
             st.radio("Presença de dispositivos invasivos?", ("", "Sim", "Não"), key="samr6"),
             st.radio("Utilização de antibióticos nos 6 meses anteriores?", ("", "Sim", "Não"), key="samr7"),
             st.radio("Feridas não cicatrizadas ou crónicas?", ("", "Sim", "Não"), key="samr8"),
