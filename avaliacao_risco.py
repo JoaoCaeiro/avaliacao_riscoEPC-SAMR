@@ -41,7 +41,6 @@ def avaliar_risco():
             st.radio("Utilização de antibióticos nos 6 meses anteriores?", ("", "Sim", "Não"), key="samr7"),
             st.radio("Feridas não cicatrizadas ou crónicas?", ("", "Sim", "Não"), key="samr8"),
             st.radio("Infeção ou colonização por SAMR prévia?", ("", "Sim", "Não"), key="samr9")
-        ]
 
         if st.button("🔍 Analisar Critérios SAMR"):
             if all(criterio != "" for criterio in criterios_samr):
